@@ -111,14 +111,9 @@ void FXOS8700CQ(){
             }else{
                 tilt[i] = 0;
             }*/
-            float distance;
-            if (t[0]<0){
-                distance = 9.8 * 0.5 * i * i * t[0] * (-1);
-            }else{
-                distance = 9.8 * 0.5 * i * i * t[0];
-            }
+
                 
-           // distance = 9.8 * 0.5 * i * i * t[0];
+            distance = 9.8 * 0.5 * i * i * t[0];
 
             if (distance > 5.0){
                 tilt[i] = 1;
